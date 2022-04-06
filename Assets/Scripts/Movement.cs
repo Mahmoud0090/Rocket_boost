@@ -5,10 +5,13 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
+    [SerializeField] ParticleSystem thrustparticles;
 
     [SerializeField]float thrust = 4f;
     [SerializeField] float rotationSpeed = 3f;
     // Start is called before the first frame update
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -26,6 +29,12 @@ public class Movement : MonoBehaviour
        if (Input.GetKey(KeyCode.Space))
         {
             rb.AddRelativeForce(Vector3.up * thrust * Time.deltaTime);
+            thrustparticles.gameObject.SetActive(true);
+        }
+
+        else
+        {
+            thrustparticles.gameObject.SetActive(false);
         }
     }
 
@@ -43,6 +52,8 @@ public class Movement : MonoBehaviour
 
     private void ApplyRotation(float rotationThrust)
     {
+        rb.freezeRotation = true; // we can only manually rotate the rocket and if hit with something wont rotate
         transform.Rotate(Vector3.forward * rotationThrust * Time.deltaTime);
+        rb.freezeRotation = false; // the physics system work again for rotation when hitting with something
     }
 }
