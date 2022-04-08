@@ -5,6 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     CanvasScript canvasScript;
+    bool IncreaseCollectionNum = true;
     private void Start()
     {
         canvasScript = FindObjectOfType<CanvasScript>();
@@ -14,8 +15,13 @@ public class Coin : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            canvasScript.IncreaseNumOfCollectedCoins();
-            Destroy(gameObject);
+            if (IncreaseCollectionNum)
+            {
+                canvasScript.IncreaseNumOfCollectedCoins();
+                IncreaseCollectionNum = false;
+                Destroy(gameObject);
+            }
+            
         }
     }
 }
