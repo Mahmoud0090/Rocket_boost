@@ -5276,6 +5276,7 @@ GameObject:
   - component: {fileID: 5077023135675726814}
   - component: {fileID: 5077023135675726815}
   - component: {fileID: 5077023135675726784}
+  - component: {fileID: 66585812}
   m_Layer: 0
   m_Name: RocketGameObject
   m_TagString: Player
@@ -5364,6 +5365,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelLoadDelay: 1
   collissionParticle: {fileID: 5265758708191044421}
+--- !u!114 &66585812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5077023135675726785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb32ccc39c105b2409571b5a27137940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missile: {fileID: 0}
 --- !u!1 &6804568344945140908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5487,7 +5501,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8584906, g: 0.21667956, b: 0.100427166, a: 1}
   m_Intensity: 7.66
   m_Range: 5
   m_SpotAngle: 30
