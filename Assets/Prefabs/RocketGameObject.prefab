@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148627153668792197}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.01, y: 0.13, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.15999973, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -4817,7 +4817,7 @@ GameObject:
   - component: {fileID: 6009920253597332441}
   m_Layer: 0
   m_Name: rocket
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4830,7 +4830,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377681479443279625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.55, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5799997, z: 0}
   m_LocalScale: {x: 0.6, y: 2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -4899,7 +4899,7 @@ GameObject:
   - component: {fileID: 7110891718411486836}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4912,7 +4912,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448843394281932862}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.003328666, y: 2.29, z: -0.1}
+  m_LocalPosition: {x: 0.003328666, y: 2.3199997, z: -0.1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.5}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -4994,7 +4994,7 @@ GameObject:
   - component: {fileID: 8932617564792289275}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5007,7 +5007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090611014813216284}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: -0.18, y: 1.9, z: 0.011367321}
+  m_LocalPosition: {x: -0.18, y: 1.9299997, z: 0.011367321}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -5089,7 +5089,7 @@ GameObject:
   - component: {fileID: 4342725370784811005}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5102,7 +5102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2834054065695670183}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0.18, y: 1.9, z: 0.011367321}
+  m_LocalPosition: {x: 0.18, y: 1.9299997, z: 0.011367321}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -5182,7 +5182,7 @@ GameObject:
   - component: {fileID: 2957226579390291377}
   m_Layer: 0
   m_Name: Spot Light (1)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5195,7 +5195,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3563231076982501439}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 2.62, z: 0}
+  m_LocalPosition: {x: 0, y: 2.6499996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -5318,8 +5318,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.54797137, y: 2.347362, z: 0.52574587}
-  m_Center: {x: 0.015514374, y: 1.6966801, z: 0.011367321}
+  m_Size: {x: 0.54797137, y: 2.347362, z: 0.560717}
+  m_Center: {x: 0.015514374, y: 1.6966801, z: 0.0074110627}
 --- !u!54 &5077023135675726814
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5377,7 +5377,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb32ccc39c105b2409571b5a27137940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 0}
+  missile: {fileID: 7994362836062225129, guid: abb18b1d80aa8ea41aaeaea89c8c7596, type: 3}
+  periodForNextFiring: 0.3
 --- !u!1 &6804568344945140908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,7 +5392,7 @@ GameObject:
   - component: {fileID: 1126071510023696350}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5404,7 +5405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6804568344945140908}
   m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
-  m_LocalPosition: {x: 0.01, y: 2.57, z: 0}
+  m_LocalPosition: {x: 0.01, y: 2.6, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.3}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -5471,7 +5472,7 @@ GameObject:
   - component: {fileID: 4668294223231156617}
   m_Layer: 0
   m_Name: Spot Light
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5484,7 +5485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7854496866645402913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.93, z: -3.09}
+  m_LocalPosition: {x: 0, y: 1.9599997, z: -3.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -5577,7 +5578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1109730496425468680, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.46
+      value: 2.4899998
       objectReference: {fileID: 0}
     - target: {fileID: 1109730496425468680, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
       propertyPath: m_LocalPosition.z

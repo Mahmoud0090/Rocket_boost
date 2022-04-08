@@ -19,10 +19,10 @@ public class MissileLauncher : MonoBehaviour
         {
             if (fire)
             {
-                missile = Instantiate(missile,
+                GameObject NewMissle = Instantiate(missile,
                new Vector3(transform.GetChild(1).position.x, transform.GetChild(1).position.y, transform.GetChild(1).position.z)
                , Quaternion.identity);
-                missile.transform.rotation = transform.rotation;
+                NewMissle.transform.rotation = transform.rotation;
                 StartCoroutine(waitTllNextfiring());
             }
             

@@ -17,9 +17,19 @@ public class CollisionHandler : MonoBehaviour
             case "Finish":
                 CheckCoinsToLoadNextLevel();
                 break;
+            case "Missile":
+                break;
             default:
                 StartCrachSequence();
                 break;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            StartCrachSequence();
         }
     }
 

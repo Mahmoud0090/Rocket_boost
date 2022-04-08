@@ -2534,6 +2534,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4540594640439783873, guid: badafeb27dc9892489711db519bcac7f, type: 3}
+      propertyPath: enemyDeathDelayTime
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: badafeb27dc9892489711db519bcac7f, type: 3}
 --- !u!1001 &3649288047455113233
@@ -2612,6 +2616,10 @@ PrefabInstance:
       propertyPath: rocket
       value: 
       objectReference: {fileID: 66585806}
+    - target: {fileID: 4759914854865775738, guid: 7de323441da3e1f4a931e62a4b7c475a, type: 3}
+      propertyPath: followOnYAxis
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4759914854865775739, guid: 7de323441da3e1f4a931e62a4b7c475a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2831,34 +2839,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 66585812, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: missile
-      value: 
-      objectReference: {fileID: 7994362836062225129, guid: abb18b1d80aa8ea41aaeaea89c8c7596, type: 3}
-    - target: {fileID: 66585812, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: periodForNextFiring
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1690581286003921935, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15999973
-      objectReference: {fileID: 0}
-    - target: {fileID: 1976822897029626732, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.6499996
-      objectReference: {fileID: 0}
-    - target: {fileID: 3951744061266074673, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.3199997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4295170096768463619, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9299997
-      objectReference: {fileID: 0}
-    - target: {fileID: 4924643752533343353, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9599997
-      objectReference: {fileID: 0}
     - target: {fileID: 5077023135675726785, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
       propertyPath: m_Name
       value: RocketGameObject
@@ -2906,22 +2886,6 @@ PrefabInstance:
     - target: {fileID: 5077023135675726812, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5265758708191044422, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.4899998
-      objectReference: {fileID: 0}
-    - target: {fileID: 7191461479762971202, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9299997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8067907137313175410, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5799997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8568469954041366969, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96fe2159dd1d50848b611163725e48f7, type: 3}

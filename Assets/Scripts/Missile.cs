@@ -17,4 +17,11 @@ public class Missile : MonoBehaviour
         rb.AddRelativeForce(Vector3.up * missileSpeed * Time.deltaTime);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
