@@ -19,8 +19,7 @@ public class CameraFollowup : MonoBehaviour
     {
         if (followOnYAxis) 
         {
-            
-            if(rocket.transform.position.y <= cameraYPos)
+            if(rocket.transform.position.y<= cameraYPos)
             {
                 transform.position = new Vector3(rocket.transform.position.x, transform.position.y, transform.position.z);
             }

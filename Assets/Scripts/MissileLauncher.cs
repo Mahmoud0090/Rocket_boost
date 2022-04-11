@@ -6,6 +6,8 @@ public class MissileLauncher : MonoBehaviour
 {
     [SerializeField] GameObject missile;
     [SerializeField] float periodForNextFiring = 1f;
+    [SerializeField] int numOfMissiles = 4;
+    public int NumOfMissiles { get { return numOfMissiles; } }
     bool fire = true;
     void Start()
     {
@@ -15,7 +17,7 @@ public class MissileLauncher : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.F) && numOfMissiles>0)
         {
             if (fire)
             {
@@ -23,6 +25,7 @@ public class MissileLauncher : MonoBehaviour
                new Vector3(transform.GetChild(1).position.x, transform.GetChild(1).position.y, transform.GetChild(1).position.z)
                , Quaternion.identity);
                 NewMissle.transform.rotation = transform.rotation;
+                numOfMissiles--;
                 StartCoroutine(waitTllNextfiring());
             }
             

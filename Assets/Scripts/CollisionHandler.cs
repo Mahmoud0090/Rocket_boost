@@ -36,6 +36,7 @@ public class CollisionHandler : MonoBehaviour
     void StartCrachSequence()
     {
         GetComponent<Movement>().enabled = false;
+        GetComponent<Movement>().thrustparticles.gameObject.SetActive(false);
         collissionParticle.gameObject.SetActive(true);
         Invoke("ReloadScene", levelLoadDelay);
     }

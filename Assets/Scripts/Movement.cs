@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     Rigidbody rb;
-    [SerializeField] ParticleSystem thrustparticles;
+    public ParticleSystem thrustparticles;
 
     [SerializeField]float thrust = 4f;
     [SerializeField] float rotationSpeed = 3f;

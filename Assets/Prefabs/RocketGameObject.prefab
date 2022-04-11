@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 8261589099657281957}
   - component: {fileID: 840608879835566980}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Thrust Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1690581286003921935
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148627153668792197}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.01, y: 0.15999973, z: 0}
+  m_LocalPosition: {x: 0.01, y: 0.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5077023135675726812}
@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.4245283, g: 0.41275752, b: 0.41011035, a: 1}
+      maxColor: {r: 0.3679245, g: 0.33807403, b: 0.33807403, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -659,7 +659,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 15
+    type: 5
     angle: 0
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -667,7 +667,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 0.1, y: 1, z: 1}
+    m_Scale: {x: 0.5, y: 0.2, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 200
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5379,6 +5379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missile: {fileID: 7994362836062225129, guid: abb18b1d80aa8ea41aaeaea89c8c7596, type: 3}
   periodForNextFiring: 0.3
+  numOfMissiles: 4
 --- !u!1 &6804568344945140908
 GameObject:
   m_ObjectHideFlags: 0
@@ -5617,8 +5618,24 @@ PrefabInstance:
       value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 1109730496425468683, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109730496425468683, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109730496425468683, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.10145953
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109730496425468683, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.14099391
+      objectReference: {fileID: 0}
+    - target: {fileID: 1109730496425468683, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9433962
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95ab1d8531d97c44a92dcae346287596, type: 3}
